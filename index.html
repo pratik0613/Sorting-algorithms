@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide & Conquer Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Divide & Conquer Algorithms</h1>
+            <p>Choose an algorithm and an input array to execute</p>
+        </header>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label for="algorithm">Select Algorithm:</label>
+                <select id="algorithm">
+                    <option value="">-- Choose an Algorithm --</option>
+                    <option value="mergeSort">Merge Sort</option>
+                    <option value="quickSort">Quick Sort</option>
+                    <option value="binarySearch">Binary Search</option>
+                    <option value="heapSort">Heap Sort</option>
+                    <option value="searchRotated">Search in Rotated Array</option>
+                    <option value="majorityElement">Majority Element</option>
+                    <option value="medianSorted">Median of Two Sorted Arrays</option>
+                    <option value="maxSubarray">Maximum Subarray (Kadane's)</option>
+                    <option value="countInversions">Count Inversions</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="arrayInput">Enter Array (comma-separated):</label>
+                <input type="text" id="arrayInput" placeholder="e.g., 5, 2, 8, 1, 9" required>
+            </div>
+
+            <div class="form-group" id="searchValueGroup" style="display: none;">
+                <label for="searchValue">Search Value:</label>
+                <input type="number" id="searchValue" placeholder="Enter value to search">
+            </div>
+
+            <button id="executeBtn" onclick="executeAlgorithm()">Execute</button>
+            <button id="clearBtn" onclick="clearResults()">Clear</button>
+        </div>
+
+        <div class="results-section">
+            <div class="result-box">
+                <h3>Algorithm Details</h3>
+                <div id="algorithmInfo">
+                    <p>Select an algorithm to see its details</p>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Time Complexity</h3>
+                <div id="complexityInfo">
+                    <p>Best Case: --</p>
+                    <p>Average Case: --</p>
+                    <p>Worst Case: --</p>
+                    <p>Space Complexity: --</p>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Result</h3>
+                <div id="result">
+                    <p>Results will appear here</p>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Execution Details</h3>
+                <div id="executionDetails">
+                    <p>Execution details will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
